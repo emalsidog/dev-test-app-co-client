@@ -1,0 +1,126 @@
+$font-stack: "Montserrat", normal;
+
+html, body {
+  font-family: $font-stack;
+}
+
+.main-header {
+  .logo {
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+
+  .main-text {
+    font-size: 48px;
+  }
+
+  .main-text-highlighted {
+    font-weight: 800;
+  }
+
+  .description-text {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .view-stats-link {
+    padding: 15px 25px;
+    text-decoration: none;
+    background-color: rgb(226, 226, 226);
+    color: #000000;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  .view-stats-link:hover {
+    background-color: rgb(206, 206, 206);
+    color: #000000;
+  }
+
+  .phone-image {
+    height: 561px;
+    margin-top: 50px;
+  }
+}
+
+.main-text-block {
+  .main-question {
+    font-size: 32px;
+  }
+
+  .main-description {
+    color: #7e7e7e;
+    font-size: 20px;
+  }
+
+  .main-question-highlighted {
+    font-weight: 700;
+    font-size: 32px;
+  }
+}
+
+.cards-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-footer {
+  padding: 20px 0;
+
+  input {
+    padding: 15px;
+  }
+
+  .subscribeForm {
+    margin-bottom: 40px;
+  }
+
+  input:focus {
+    box-shadow: none;
+  }
+
+  .footer-text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .footer-logo {
+    font-weight: 400;
+    font-size: 32px;
+  }
+
+  .input-group {
+    width: 579px !important;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .cards-wrapper div {
+    margin: 0 20px;
+    margin-bottom: 125px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main-text {
+    font-size: 30px !important;
+  }
+  .description-text {
+    font-size: 15px !important;
+  }
+  .cards-wrapper { 
+    margin-bottom: 0;
+  }
+
+  .main-question {
+    font-size: 25px !important;
+  }
+
+  .main-description {
+    font-size: 15px !important;
+  }
+
+  .main-question-highlighted {
+    font-size: 25px !important;
+  }
+}

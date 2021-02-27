@@ -1,0 +1,19 @@
+$font-stack: "Montserrat", normal;
+$default-font-weight: 400;
+
+.nav {
+    background-color: #3A80BA;
+    color: #FFFFFF;
+
+    .navbar-brand {
+        font-family: $font-stack;
+        font-weight: $default-font-weight;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .nav .navbar-brand {
+        font-size: 30px;
+    }
+}

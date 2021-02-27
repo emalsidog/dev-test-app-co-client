@@ -1,0 +1,104 @@
+$font-stack: "Montserrat", normal;
+$primary-color: #ffffff;
+
+// Heading
+.table-heading {
+  font-family: $font-stack;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+// Table
+.users-stats {
+  width: 100%;
+  td,
+  th {
+    border-right: 1px solid #ddd;
+    padding: 8px;
+    font-family: $font-stack !important;
+  }
+  th {
+    background-color: #3a80ba;
+    color: $primary-color;
+    text-align: center;
+    padding: 14px;
+  }
+  td {
+    color: #1a1a1a;
+  }
+  tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  tr.table-rows-names > th:first-child {
+    border-top-left-radius: 15px;
+  }
+  tr.table-rows-names > th:last-child {
+    border-top-right-radius: 15px;
+    border-right: none;
+  }
+  tr.table-rows-names td:last-child {
+    border-right: 0 none;
+  }
+  tr.table-rows-content:hover {
+    cursor: pointer;
+  }
+}
+
+// Pagination
+
+ul.pagination {
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin: 20px 0;
+  user-select: none;
+  li {
+    width: 48px;
+    height: 48px;
+
+    padding: 14px 19px;
+    margin: 0 8px;
+
+    border: 2px solid #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: $font-stack;
+  }
+
+  li:last-child {
+    border: none;
+  }
+
+  li:first-child {
+    border: none;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+}
+
+ul.pagination li {
+  a {
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+}
+ul.pagination li.active {
+  background-color: #337ab7;
+  a {
+    color: $primary-color;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  ul.pagination li {
+    width: 40px;   
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 2px;
+  }
+}

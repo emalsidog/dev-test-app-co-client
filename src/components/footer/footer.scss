@@ -1,0 +1,22 @@
+$font-stack: "Montserrat", normal;
+$primary-color: #ffffff;
+$default-font-weight: 400;
+
+.footer {
+  background-color: #1c3b55;
+  color: $primary-color;
+  padding: 20px 0;
+
+  .logo-footer, .text-footer {
+    font-family: $font-stack;
+    font-weight: $default-font-weight;
+  }
+
+  .logo-footer {
+    font-size: 24px;
+  }
+  
+  .text-footer {
+    font-size: 16px;
+  }
+}
